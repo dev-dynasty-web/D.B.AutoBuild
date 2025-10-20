@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+import heroIcon from "@/assets/hero-icon.png";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -19,23 +20,34 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 text-center">
         <div className="flex flex-col items-center gap-6 md:gap-8 animate-fade-in-up">
-          <img 
-            src={logo} 
-            alt="D.B.AUTOBUILD Logo" 
-            className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 drop-shadow-2xl"
-          />
+          <div className="relative">
+            <img 
+              src={heroIcon} 
+              alt="Car Detailing Icon" 
+              className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 drop-shadow-2xl"
+            />
+          </div>
           
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Prémiový Automotive
-              </span>
-              <br />
-              <span className="text-foreground">Detailing</span>
-            </h1>
+          <div className="space-y-3 md:space-y-5">
+            <div className="flex items-center justify-center gap-3 md:gap-4 mb-4">
+              <img 
+                src={logo} 
+                alt="D.B.AUTOBUILD" 
+                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+              />
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  D.B.AUTOBUILD
+                </span>
+              </h1>
+            </div>
             
-            <p className="text-base md:text-xl lg:text-2xl text-muted-foreground max-w-xl mx-auto px-4">
-              Špičková starostlivosť o váš vozidlo. Profesionálny detailing a ochrana laku.
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              Prémiový Car Detailing
+            </h2>
+            
+            <p className="text-base md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
+              Profesionálna starostlivosť o váš automobil. Detailing a ochrana laku na najvyššej úrovni.
             </p>
           </div>
         </div>
