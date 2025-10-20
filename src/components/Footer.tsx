@@ -1,16 +1,16 @@
-import logo from "@/assets/logo.jpeg";
+import heroIcon from "@/assets/hero-icon.png";
 
 export const Footer = () => {
   return (
-    <footer className="py-12 border-t border-border/50 relative">
+    <footer className="py-16 md:py-20 border-t border-border/50 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-6">
           <img 
-            src={logo} 
-            alt="D.B.AUTOBUILD" 
-            className="w-24 h-24 mb-6 opacity-80"
+            src={heroIcon} 
+            alt="D.B.AUTOBUILD Car Detailing" 
+            className="w-32 h-32 md:w-40 md:h-40 drop-shadow-[0_0_40px_rgba(0,149,255,0.3)]"
           />
           <h3 className="text-xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
             D.B.AUTOBUILD MASTER S.R.O

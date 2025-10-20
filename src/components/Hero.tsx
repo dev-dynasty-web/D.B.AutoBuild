@@ -19,34 +19,27 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 text-center">
-        <div className="flex flex-col items-center gap-6 md:gap-8 animate-fade-in-up">
+        <div className="flex flex-col items-center gap-8 md:gap-12 animate-fade-in-up">
           <div className="relative">
             <img 
               src={heroIcon} 
-              alt="Car Detailing Icon" 
-              className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 drop-shadow-2xl"
+              alt="Car Detailing" 
+              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 drop-shadow-[0_0_60px_rgba(0,149,255,0.5)]"
             />
           </div>
           
-          <div className="space-y-3 md:space-y-5">
-            <div className="flex items-center justify-center gap-3 md:gap-4 mb-4">
-              <img 
-                src={logo} 
-                alt="D.B.AUTOBUILD" 
-                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
-              />
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  D.B.AUTOBUILD
-                </span>
-              </h1>
-            </div>
+          <div className="space-y-4 md:space-y-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                D.B.AUTOBUILD
+              </span>
+            </h1>
             
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/90">
               Prémiový Car Detailing
             </h2>
             
-            <p className="text-base md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Profesionálna starostlivosť o váš automobil. Detailing a ochrana laku na najvyššej úrovni.
             </p>
           </div>
