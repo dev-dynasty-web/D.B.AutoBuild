@@ -30,32 +30,32 @@ export const Services = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/50 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16 px-4">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4">
             Naše <span className="bg-gradient-primary bg-clip-text text-transparent">Služby</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Poskytujeme komplexné služby starostlivosti o váš automobil
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card 
                 key={index}
-                className="group p-8 bg-card/50 backdrop-blur-glass border-glass-border hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20"
+                className="group p-6 md:p-8 bg-card/50 backdrop-blur-glass border-glass-border hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="mb-6 relative">
+                <div className="mb-4 md:mb-6 relative">
                   <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-2xl rounded-full" />
-                  <Icon className="h-12 w-12 text-primary relative z-10 group-hover:scale-110 transition-transform" />
+                  <Icon className="h-10 w-10 md:h-12 md:w-12 text-primary relative z-10 group-hover:scale-110 transition-transform" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-foreground group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
               </Card>

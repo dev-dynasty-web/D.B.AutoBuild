@@ -17,31 +17,33 @@ export const Hero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="animate-fade-in-up">
+      <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 text-center">
+        <div className="flex flex-col items-center gap-6 md:gap-8 animate-fade-in-up">
           <img 
             src={logo} 
             alt="D.B.AUTOBUILD Logo" 
-            className="mx-auto w-48 h-48 md:w-64 md:h-64 mb-8 drop-shadow-2xl"
+            className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 drop-shadow-2xl"
           />
+          
+          <div className="space-y-4 md:space-y-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Prémiový Automotive
+              </span>
+              <br />
+              <span className="text-foreground">Detailing</span>
+            </h1>
+            
+            <p className="text-base md:text-xl lg:text-2xl text-muted-foreground max-w-xl mx-auto px-4">
+              Špičková starostlivosť o váš vozidlo. Profesionálny detailing a ochrana laku.
+            </p>
+          </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          <span className="bg-gradient-primary bg-clip-text text-transparent">
-            Prémiový
-          </span>
-          <br />
-          <span className="text-foreground">Car Detailing</span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          Profesionálna starostlivosť o váš automobil. Detailing a ochrana laku na najvyššej úrovni.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mt-8 md:mt-12 animate-fade-in-up px-4" style={{ animationDelay: "0.4s" }}>
           <Button 
             size="lg" 
-            className="group bg-gradient-primary hover:opacity-90 text-white text-lg px-8 py-6 rounded-2xl shadow-2xl shadow-primary/50"
+            className="group bg-gradient-primary hover:opacity-90 text-white text-base md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-2xl shadow-2xl shadow-primary/50"
             onClick={() => scrollToSection("services")}
           >
             Naše Služby
@@ -51,10 +53,10 @@ export const Hero = () => {
           <Button 
             size="lg" 
             variant="outline"
-            className="text-lg px-8 py-6 rounded-2xl border-2 border-primary/50 hover:bg-primary/10 hover:border-primary backdrop-blur-sm"
+            className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-2xl border-2 border-primary/50 hover:bg-primary/10 hover:border-primary backdrop-blur-sm"
             onClick={() => scrollToSection("contact")}
           >
-            <Sparkles className="mr-2 h-5 w-5" />
+            <Sparkles className="mr-2 h-4 md:h-5 w-4 md:w-5" />
             Kontaktujte Nás
           </Button>
         </div>
