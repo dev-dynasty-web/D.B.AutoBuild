@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import heroIcon from "@/assets/hero-icon.png";
+import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,22 +18,16 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-md border-b border-primary/20">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src={heroIcon} 
+              src={logo} 
               alt="D.B.AUTOBUILD" 
-              className="w-12 h-12"
+              className="h-16 w-auto"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-                D.B.AUTOBUILD
-              </h1>
-              <p className="text-xs text-muted-foreground">AUTODETAILINGOVÉ ŠTÚDIO</p>
-            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -42,7 +36,7 @@ export const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors uppercase tracking-wider"
+                className="text-sm font-medium text-foreground/70 hover:text-primary transition-all duration-300 uppercase tracking-[0.2em] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gradient-primary hover:after:w-full after:transition-all after:duration-300"
               >
                 {item.label}
               </button>
