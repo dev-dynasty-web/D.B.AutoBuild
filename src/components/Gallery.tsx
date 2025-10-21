@@ -11,7 +11,7 @@ export const Gallery = () => {
             <p className="text-sm text-primary font-light tracking-[0.3em] uppercase">Portfolio</p>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-4 md:mb-6 tracking-tight">
-            Naše <span className="bg-gradient-luxury bg-clip-text text-transparent font-normal">realizácie</span>
+            Naše <span className="text-primary font-normal">realizácie</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light">
             Prezrite si ukážky našich detailingových projektov

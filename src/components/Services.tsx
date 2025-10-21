@@ -36,7 +36,7 @@ export const Services = () => {
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-4 md:mb-6 tracking-tight">
             Komplexná starostlivosť<br />
-            <span className="bg-gradient-luxury bg-clip-text text-transparent font-normal">o Vaše vozidlo</span>
+            <span className="text-primary font-normal">o Vaše vozidlo</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light">
             Prémiové služby s použitím najlepších produktov a technológií

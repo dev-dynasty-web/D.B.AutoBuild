@@ -13,7 +13,7 @@ export const Contact = () => {
             <p className="text-sm text-primary font-light tracking-[0.3em] uppercase">Kontakt</p>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-4 md:mb-6 tracking-tight">
-            Dohodnite si <span className="bg-gradient-luxury bg-clip-text text-transparent font-normal">termín</span>
+            Dohodnite si <span className="text-primary font-normal">termín</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-light">
             Sme tu pre vás a vaše vozidlo
